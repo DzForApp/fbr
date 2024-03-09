@@ -6,30 +6,30 @@ import { Button } from '@/components/ui/button'
 function Contact() {
   return (
     <section id="Contactez-Nous" className=' relative flex flex-col   md:flex-row  font-sans text-black  w-full h-screen   scroll-my-8 items-center '>
-       <div className='md:container   w-full  h-[65vh] mt-32  md:my-16 md:mt-24 flex flex-row justify-center'>
-        <div className='relative  md:w-1/4 h-[60vh] shadow-2xl border-b-1 border-x-1 shadow-card-foreground '>
+        <div className='container relative flex flex-col md:flex-row md:w-2/3 h-screen py-16 md:py-0 md:h-[60vh]  border-b-1 border-x-1 shadow-card-foreground '>
           
-            <div className='relative w-full h-[30vh]   '>
+            <div className='relative w-full h-1/2 md:h-full   '>
                 
-                <Image  src="/images/f3.jpg" fill alt="Login Image"/>
+                <Image  src="/images/f3.jpg" fill alt="contact Image"/>
                     
             </div>
        
-            <div className='w-full border-l-primary-foreground bg-fbr  flex flex-col h-1/2'>
-             <div className=' w-full    h-full  text-center   '>
-                <h1 className='justify-center   uppercase font-semibold text-2xl text-incomBg'>Contactez Nous</h1>
-                        <div className='flex flex-col px-12 text-incomBg my-4 space-y-2 md:space-y-4'>
-                        
-                        <input type="text" />
-                        <input type="password" />
-                        </div>
-                <Button className='bg-incomBg hover:bg-gri hover:text-incomBg'>Connecter</Button>
-             </div>
-        </div>
-        </div>
-        
+             <div className=' w-full h-full py-12 space-y-4 text-center  bg-red-500   '>
 
-    </div>
+                <h1 className='justify-center   uppercase font-semibold text-2xl text-incomBg'>Contactez Nous</h1>
+
+                        <div className='flex flex-col px-12 text-incomBg  my-4 space-y-2 md:space-y-4'>
+                          <input type="text" />
+                          <input type="password" />
+                          <input type="text" className='w-full h-[15vh]' name="" id="" />
+                        </div>
+
+                <Button className='bg-incomBg hover:bg-gri hover:text-incomBg'>Connecter</Button>
+
+             </div>
+             
+        </div>
+         
        
         
         

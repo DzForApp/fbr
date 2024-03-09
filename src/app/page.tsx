@@ -3,6 +3,8 @@ import Navbar from "@/components/Header/navbar";
 import About from "@/components/Sections/About/about";
 import Banner from "@/components/Sections/Banner/Banner"; 
 import Contact from "@/components/Sections/Contact/contact";
+import Services from "@/components/Sections/OurService/services";
+import Process from "@/components/Sections/Process/Process";
 import { ProdcutList } from "@/components/Sections/Products/prodcuts-list";
  
 export default function Home() {
@@ -19,8 +21,10 @@ export default function Home() {
        
         </div> 
         <About />
-        
+        <Services />
+        <Process />
         <Contact />
+
          
         </div>
         

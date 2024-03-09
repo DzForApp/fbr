@@ -33,10 +33,12 @@ function Banner() {
                   </div>
                   </a>
               </div>
-          <div className='md:absolute md:-bottom-12 w-full space-y-4 text-center px-2 lg:w-2/3 h-[18vh] md:h-[15vh]   md:rounded-t-2xl p-2 md:p-2 justify-center items-center bg-fbr'>
-               
-                <h1 className='text-xl' >PourQuoi FBR  </h1>
-                <p className='font-semibold items-center  text-3xl '>OUR AMBITION IS OUR WEAPON !</p>
+          <div className='md:absolute md:-bottom-16 w-full space-y-4 text-center px-2 lg:w-2/3 h-[18vh] md:h-[15vh]   md:rounded-t-2xl p-2 md:p-2 justify-center items-center bg-fbr'>
+               <a href="#A_Propos">
+               <h1 className='text-2xl' >PourQuoi FBR  </h1>
+               </a>
+                
+                <p className='font-semibold items-center text-3xl '>OUR AMBITION IS OUR WEAPON !</p>
           
           </div>
       
