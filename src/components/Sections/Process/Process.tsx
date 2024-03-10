@@ -10,7 +10,7 @@ function Process() {
              Notre Processus    
             </h1>
         </div>
-        <div className="w-3/4 h-[80vh]  p-16 items-center justify-center flex flex-col md:flex-row">
+        <div className="relative w-full md:w-3/4 md:h-[60vh]  p-4 items-center justify-center flex flex-col md:flex-row">
             <ProCard _id={"01"} name={"Listenning"} icon={HeadphonesIcon} desc={["In this this fase we try to know more about your busniess by asking the right questions . The more detailes we know the easier the prosess "]}/>
             <ProCard _id={"02"} name={"Planning"} icon={DessertIcon} desc={["In this this fase we try to know more about your busniess by asking the right questions . The more detailes we know the easier the prosess "]}/>
             <ProCard _id={"03"} name={"Execution"} icon={ShipWheel} desc={["In this this fase we try to know more about your busniess by asking the right questions . The more detailes we know the easier the prosess "]}/>

@@ -14,7 +14,7 @@ function Contact() {
                     
             </div>
        
-             <div className=' w-full h-full py-12 space-y-4 text-center  bg-fbr   '>
+             <div className=' w-full h-1/2 py-12 space-y-4 text-center rounded-b-lg bg-fbr   '>
 
                 <h1 className='justify-center   uppercase font-semibold text-2xl text-incomBg'>Contactez Nous</h1>
 

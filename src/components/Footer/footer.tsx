@@ -27,19 +27,23 @@ function Footer() {
    
 
   return (
-    <footer className=" w-full h-[30vh] flex items-center md:py-8 bg-incomBg shadow-lg text-white">
-       <div className="w-1/3 h-full px-16  ">
+    <footer className=" w-full py-8 h-auto space-y-4  md:h-[30vh] flex flex-col-reverse md:flex-row items-center md:py-8 bg-incomBg shadow-lg text-white">
+      
+       <div className="w-full flex  flex-row md:flex-col space-y-8 md:w-1/3 h-auto px-16  ">
         <h1 className="mb-4 ">CONTACTS</h1>
-        <div className="flex justify-start space-x-4">
-           
-          <div className="flex flex-col w-full space-4 space-y-4">
-          <FootItem icon={LocateIcon} label={"Bordj El Kiffan , Algiers, Algeria"} />
-          <FootItem icon={PhoneCallIcon} label={"+213 661 61 20 50"} />
-          <FootItem icon={MailCheckIcon} label={"contact@fbr-dz.com"} />
+          <div className="flex justify-start space-x-4">
+            
+            <div className="flex flex-col w-full space-4 space-y-4">
+              <FootItem icon={LocateIcon} label={"Bordj El Kiffan , Algiers, Algeria"} />
+              <FootItem icon={PhoneCallIcon} label={"+213 661 61 20 50"} />
+              <FootItem icon={MailCheckIcon} label={"contact@fbr-dz.com"} />
+            </div>
+          </div>
        </div>
-        </div>
-       </div>
-       <div className="w-1/3 h-full px-16  ">
+      <div className="md:hidden">
+        ---------------------------------------------
+      </div>
+       <div className="w-full   flex flex-row md:flex-col  md:w-1/3 md:h-full px-16   ">
           <h1 className="mb-4 ">SOCIAL MEDIA</h1>
         <div className="flex flex-col w-1/2 space-4 space-y-4">
           <FootItem icon={FacebookIcon} label={"FBRDZ"} />
@@ -47,8 +51,11 @@ function Footer() {
           <FootItem icon={LinkedinIcon} label={"FBRadiator"} />
        </div>
        </div>
-       <div className="flex w-1/3 items-center text-6xl ">
-        <Blinds className="text-fbr mt-2 text-4xl w-16 h-12"/>
+       <div className="md:hidden">
+        ---------------------------------------------
+      </div>
+       <div className="flex flex-row justify-center pb-6 md:justify-start w-full md:w-1/3  text-6xl  ">
+        <Blinds className="text-fbr my-2 text-4xl w-16 h-12"/>
         <h1 className="text-white ">FBR</h1>
         
        </div>
