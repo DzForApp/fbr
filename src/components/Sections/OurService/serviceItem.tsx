@@ -1,8 +1,8 @@
-import { Button } from '@/components/ui/button'
-import { Card } from '@/components/ui/card'
-import { LucideIcon } from 'lucide-react'
-import Image from 'next/image'
-import React, { ReactNode } from 'react'
+import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card"
+import { LucideIcon } from "lucide-react"
+import Image from "next/image"
+import React, { ReactNode } from "react"
 
 type ProductProps = {
     _id:string,
@@ -20,7 +20,7 @@ function ServiceItem({_id, name, icon:Icon, desc,className, children}:  ProductP
   >
    
       <h1 className="self-center text-gray text-lg p-y-4 font-semibold">{name}</h1>
-      <Icon className='w-full p-6 h-1/2 text-fbr  ' />
+      <Icon className="w-full p-6 h-1/2 text-fbr  " />
       <p className="text-gray flex-grow">{desc}</p>
   </div> 
   )

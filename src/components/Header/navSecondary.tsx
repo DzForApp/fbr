@@ -52,8 +52,8 @@ function NavSecond() {
             </div>
             <div className="flex w-2/12  justify-end h-auto  ">
               
-              <LinkItem className={`link ${pathname === '/login' ? 'active' : ''}`} href={'/login'} label={""} icon={LogInIcon} />
-              <LinkItem className={`link ${pathname === '/register' ? 'active' : ''}`} href={'/register'} label={""} icon={UserPlusIcon} />
+              <LinkItem className={`link ${pathname === "/login" ? "active" : ""}`} href={"/login"} label={""} icon={LogInIcon} />
+              <LinkItem className={`link ${pathname === "/register" ? "active" : ""}`} href={"/register"} label={""} icon={UserPlusIcon} />
              
             </div>
         

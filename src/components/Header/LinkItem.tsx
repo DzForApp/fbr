@@ -1,6 +1,6 @@
-import { LucideIcon } from 'lucide-react'
-import Link from 'next/link' 
-import React from 'react'
+import { LucideIcon } from "lucide-react"
+import Link from "next/link" 
+import React from "react"
 
 
 type LinkItemProps ={
@@ -18,7 +18,7 @@ function LinkItem({className,href ,label, icon:Icon }: LinkItemProps) {
             className={className}
             href={href}
           >
-            <div className='flex space-x-4 '>
+            <div className="flex space-x-4 ">
             <Icon /> 
             <span>
             {label}

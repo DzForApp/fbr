@@ -11,9 +11,9 @@ function About() {
           <div className="flex flex-col  space-y-4 md:flex-row w-full h-auto md:h-full justify-center items-center" >
             <div className="relative md:w-1/2 space-y-8 md:py-4 items-center  ">
               <h1 className="relative md:mb-4 uppercase font-semibold text-2xl text-fbr">à Propos FBR</h1>
-              <p className="w-full text-3xl px-4  md:text-5xl font-semibold">  Construits pour l"endurance,<br/> refroidis pour l"efficacité</p>
+              <p className="w-full text-3xl px-4  md:text-5xl font-semibold">  Construits pour l&apos;endurance,<br/> refroidis pour l&apos;efficacité</p>
               <p className=" md:flex text-lg md:w-full  px-6 py-6  lg:text-2xl md:text-gray-700   md:px-24">
-                FBR est une conmapnie reconnu dans l"industrie de la fabrication de radiateurs automobiles, 
+                FBR est une conmapnie reconnu dans l&apos;industrie de la fabrication de radiateurs automobiles, 
                 offrant des solutions de refroidissement de haute qualité pour une large gamme de véhicules. 
                </p>
                <a href="#Services">
