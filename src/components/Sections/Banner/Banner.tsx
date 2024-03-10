@@ -10,7 +10,7 @@ function Banner() {
     
       
   return (
-    <section id='Acceuil'
+    <section id="Acceuil"
       className="flex flex-col space-y-0  scroll-my-24  md:space-y-4 w-full  lg:h-[100vh] lg:justify-center items-center lg:py-0 "
     >
           <div className="absolute top-0 -z-10  left-0 md:h-screen w-full">

@@ -12,7 +12,7 @@ const images =[
 
 function Testimonials() {
   return (
-    <section id='Acceuil'
+    <section id="Testimonial"
       className="flex flex-col space-y-0  scroll-my-2  md:space-y-4 w-full   lg:justify-center items-center lg:py-0 "
     >
         <div className='w-full h-screen  items-center justify-center'>
