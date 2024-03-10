@@ -6,6 +6,7 @@ import Contact from "@/components/Sections/Contact/contact";
 import Services from "@/components/Sections/OurService/services";
 import Process from "@/components/Sections/Process/Process";
 import { ProdcutList } from "@/components/Sections/Products/prodcuts-list";
+import Testimonials from "@/components/Sections/Testimonials/Testimonials";
  
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <About />
         <Services />
         <Process />
+        <Testimonials />
         <Contact />
 
          
