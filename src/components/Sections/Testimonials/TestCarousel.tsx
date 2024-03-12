@@ -23,19 +23,19 @@ const TestItemData = [ {
   name:"SONACOM",
   imageUrl :"/images/f6.jpg",
   rate:5,
-  comment:"no comment- text to display 1"
+  comment:"no comment- text to display 01"
 },
 {
   name:"ALG-AUTO",
   imageUrl :"/images/f8.jpg",
   rate:4,
-  comment:"no comment text to display 2"
+  comment:"no comment text to display 02"
 },
 {
   name:"CEFAO",
   imageUrl :"/images/f9.jpg",
   rate:3,
-  comment:"no comment text to display  3"
+  comment:"no comment text to display  03"
 },
 
 ]
