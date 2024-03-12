@@ -1,7 +1,7 @@
 import { Carousel } from "@/components/ui/carousel"
 import Image from "next/image"
-import React from "react"
-import Karousel from "../Banner/Carousel"
+import React from "react" 
+import TestKarousel from "./TestCarousel"
 
 
 const images =[
@@ -9,6 +9,7 @@ const images =[
      "/images/f1.jpg",
      "/images/f7.jpg",
  ]
+ 
 
 function Testimonials() {
   return (
@@ -22,12 +23,13 @@ function Testimonials() {
                         <div className="absolute w-full h-full bg-incomBg opacity-60"></div>
                     <div className="w-full h-full text-center">
                     
-                        <div className="container felx flex-col w-full justify-center h-full p-y-2">
+                        <div className="container felx flex-col w-full justify-center h-full md:p-y-2">
                             <h1 className="relative w-full h-auto p-2 text-fbr font-semibold uppercase">Feedback Clients</h1>
                             <h1 className="relative w-full h-auto text-6xl  font-sans text-center">Testimonials</h1>
-                            <div className="relative flex flex-row items-center justify-center w-full h-1/2 mt-8 p-2 rounded-lg bg-fbr">
-                               
+                            <div className="relative flex flex-row items-start opacity-90  justify-center w-full h-1/2 mt-8  rounded-lg bg-fbr">
+                              <TestKarousel/>   
                             </div>
+                            
                         </div>
 
                     </div>

@@ -34,8 +34,8 @@ function NavSecond() {
   }, []);
 
   return (
-    <header className={"bg-incomBg   transition-all ease-in-out shadow-md text-fbr"}>
-      <div className=" relative w-full top-0 h-[1vh] flex  justify-between items-center ">
+    <header className={`${isScrolled && "bg-white   transition-all ease-in-out shadow-md text-fbr"}`}>
+      <div className=" relative w-full top-0 md:h-[2vh] flex  text-fbr justify-between items-center ">
         
             <div className="flex w-1/6 items-center  text-6xl  font-bold ">
               <Blinds className="text-fbr mt-2 text-4xl w-16 h-12"/>

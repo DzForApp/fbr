@@ -12,9 +12,9 @@ const images =[
    /* "/images/f2.jpg",
     /*"/images/f3.jpg",
     /*"/images/f4.jpg",
-    /*"images/f5.jpg",
-    "images/f6.jpg",
-    "images/f7.jpg",*/
+    /*"images/f5.jpg",*/
+    "/images/f6.jpg",
+    "/images/f4.jpg",
     "/images/f8.jpg",
     "/images/f9.jpg",
 ]
@@ -34,14 +34,14 @@ function Karousel() {
     <div className="relative p-0 w-full h-screen    ">
         <Carousel
       plugins={[plugin.current]}
-      className="h-screen w-full "
+      className="h-full w-full "
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
         
       <CarouselContent>
            
-        {Array.from({ length: 1 }).map((_, index) => (
+        {Array.from({ length: 3 }).map((_, index) => (
           <CarouselItem key={index}>
               
             <div className="p-0 ">
