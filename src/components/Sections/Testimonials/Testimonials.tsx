@@ -7,8 +7,8 @@ import Partners from "../Partners/Partners"
 
 const images =[
     
-     "/images/f1.jpg",
-     "/images/f7.jpg",
+     "/images/backgrounds/f1.jpg",
+     "/images/backgrounds/f7.jpg",
  ]
  
 
