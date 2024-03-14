@@ -15,8 +15,8 @@ type ProductProps = {
 function ServiceItem({_id, name, icon:Icon, desc,className, children}:  ProductProps) {
   return (
     <div
-    className={`${className} hover:scale-105  hover:mx-4 md:ease-in-out duration-700 hover:bg-incomBg hover:text-white text-incomBg flex flex-grow-1 
-    basis-full md:basis-1/3 xl:basis-1/4 flex-col m-2  space-y-2 w-32 h-52 bg-white shadow-xl rounded-xl  p-4`}
+    className={`${className} hover:scale-105  hover:mx-4 xl:ease-in-out duration-1000 hover:bg-incomBg hover:text-white text-incomBg flex flex-grow-1 
+    basis-full md:basis-1/3 xl:basis-1/4 flex-col m-2  space-y-2 w-32 h-52 md:w-36 md:h-52 md:m-6  bg-white shadow-xl rounded-xl  p-4`}
   >
    
       <h1 className="self-center text-gray text-lg p-y-4 font-semibold">{name}</h1>

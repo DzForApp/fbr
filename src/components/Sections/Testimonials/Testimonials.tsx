@@ -2,6 +2,7 @@ import { Carousel } from "@/components/ui/carousel"
 import Image from "next/image"
 import React from "react" 
 import TestKarousel from "./TestCarousel"
+import Partners from "../Partners/Partners"
 
 
 const images =[
@@ -14,7 +15,7 @@ const images =[
 function Testimonials() {
   return (
     <section id="Testimonial"
-      className="flex flex-col space-y-0  scroll-my-2  md:space-y-4 w-full   lg:justify-center items-center lg:py-0 "
+      className="flex flex-col space-y-0  scroll-my-16  md:space-y-4 w-full   lg:justify-center items-center lg:py-0 "
     >
         <div className="w-full h-screen  items-center justify-center">
                 <div className="w-full h-1/2">
@@ -34,6 +35,9 @@ function Testimonials() {
 
                     </div>
                 </div>   
+                <div className="h1/2">
+                     <Partners/>
+                </div>
         </div>
     </div>
 </section>
