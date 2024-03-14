@@ -13,10 +13,10 @@ const images =[
     /*"/images/f3.jpg",
     /*"/images/f4.jpg",
     /*"images/f5.jpg",*/
-    "/images/f6.jpg",
-    "/images/f4.jpg",
-    "/images/f8.jpg",
-    "/images/f9.jpg",
+    "/images/backgrounds/f6.jpg",
+    "/images/backgrounds/f4.jpg",
+    "/images/backgrounds/f8.jpg",
+    "/images/backgrounds/f9.jpg",
 ]
 function Karousel() {
 

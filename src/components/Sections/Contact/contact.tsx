@@ -10,7 +10,7 @@ function Contact() {
           
             <div className='relative w-full h-1/2 md:h-full   '>
                 
-                <Image  src="/images/f3.jpg" fill alt="contact Image"/>
+                <Image  src="/images/backgrounds/f3.jpg" fill alt="contact Image"/>
                     
             </div>
        

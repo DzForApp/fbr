@@ -26,7 +26,7 @@ function About() {
             </div>
             <div className="relative flex w-[35vh] h-[30vh] md:w-1/2 md:h-[75vh]   md:py-4 items-center justify-center ">
              
-                <Image  src="/images/r6-3d.png" fill alt="About Image"/>
+                <Image  src="/images/backgrounds/r6-3d.png" fill alt="About Image"/>
               
             </div>
             </div>

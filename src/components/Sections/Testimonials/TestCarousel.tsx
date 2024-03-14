@@ -8,32 +8,32 @@ import TestItem from "./TestItem"
 
 const images =[
   
-    "/images/f6.jpg",
-    "/images/f4.jpg",
-    "/images/f8.jpg",
-    "/images/f9.jpg",
+    "/images/backgrounds/f6.jpg",
+    "/images/backgrounds/f4.jpg",
+    "/images/backgrounds/f8.jpg",
+    "/images/backgrounds/f9.jpg",
 ]
 const TestItemData = [ {
   name:"Ahmed",
-  imageUrl :"/images/f4.jpg",
+  imageUrl :"/images/backgrounds/f4.jpg",
   rate:5,
   comment:"no comment"
 },
 {
   name:"SONACOM",
-  imageUrl :"/images/f6.jpg",
+  imageUrl :"/images/backgrounds/f6.jpg",
   rate:5,
   comment:"no comment- text to display 01"
 },
 {
   name:"ALG-AUTO",
-  imageUrl :"/images/f8.jpg",
+  imageUrl :"/images/backgrounds/f8.jpg",
   rate:4,
   comment:"no comment text to display 02"
 },
 {
   name:"CEFAO",
-  imageUrl :"/images/f9.jpg",
+  imageUrl :"/images/backgrounds/f9.jpg",
   rate:3,
   comment:"no comment text to display  03"
 },
