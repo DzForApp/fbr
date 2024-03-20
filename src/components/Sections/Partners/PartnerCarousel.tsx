@@ -41,10 +41,10 @@ function PartnerCarousel() {
       <CarouselContent>
            
         {Array.from({ length: 8 }).map((_, index) => (
-          <CarouselItem key={index} className="basis-1/3 md:basis-1/4">
+          <CarouselItem key={index} className="basis-full md:basis-1/4">
               
-            <div className="relative p-0 flex   ">
-              <Card className=" relative flex  w-40 h-40 ">
+            <div className="relative p-0 flex  justify-center ">
+              <Card className=" relative flex  w-64 h-64 md:w-40 md:h-40 ">
                 <CardContent className=" flex w-full  aspect-square space-x-8 items-start justify-center p-0">
                     
                   <TestItem  imageUrl={BrandLogos[index]}  />

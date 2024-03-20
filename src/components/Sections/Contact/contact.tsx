@@ -19,9 +19,9 @@ function Contact() {
                 <h1 className='justify-center   uppercase font-semibold text-2xl text-incomBg'>Contactez Nous</h1>
 
                         <div className='flex flex-col px-12 text-incomBg  my-4 space-y-2 md:space-y-4'>
-                          <input type="text" />
-                          <input type="password" />
-                          <input type="text" className='w-full h-[15vh]' name="" id="" />
+                          <input id='name' type="text" autoComplete='true' />
+                          <input id='email' type="password" autoComplete='true'/>
+                          <input  type="text" className='w-full h-[15vh]' name="" id="desc" autoComplete='true' />
                         </div>
 
                 <Button className='bg-incomBg hover:bg-gri hover:text-incomBg'>Connecter</Button>

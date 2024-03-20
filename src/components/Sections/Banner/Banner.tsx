@@ -4,10 +4,14 @@ import React from "react"
 import { Button } from "../../ui/button"
 import Image from "next/image"
 import Karousel from "./Carousel" 
+import { motion, useTransform, useViewportScroll } from "framer-motion"
 
 function Banner() {
 
-    
+  const { scrollYProgress } = useViewportScroll()
+  const scale = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+
+  
       
   return (
     <section id="Acceuil"
@@ -17,7 +21,19 @@ function Banner() {
                  
               <Karousel />  
           </div>
-              <div className=" container relative flex  space-y-16  w-full h-screen text-center md:w-1/2 flex-col text-shadow-xl  items-center justify-center md:space-y-4 lg:text-center text-fbr ">
+
+ 
+          <motion.div  className="p-0 w-full "
+          initial={{opacity: 0}}
+          whileInView={{opacity: 1}}
+          viewport={{ once: true }}
+          animate={{scale: 0.9 }}
+          transition={{duration: 0.9, delay: 0.1 , ease: "easeOut"}}
+         
+           >
+              <div  
+                  
+                className="   relative flex  space-y-16  w-full h-screen text-center md:w-1/2 flex-col text-shadow-xl  items-center justify-center md:space-y-4 lg:text-center text-fbr ">
                   <h1 className="hover:scale-125  transition duration-500 cursor-pointer w-full text-5xl    uppercase md:text-7xl font-bold">
                       Frères Bouali <br/> Radiateurs
                   </h1>
@@ -33,6 +49,7 @@ function Banner() {
                   </div>
                   </a>
               </div>
+              </motion.div>
           <div className="md:absolute md:-bottom-16 w-full space-y-4 text-center px-2 lg:w-2/3 h-[18vh] md:h-[15vh]   md:rounded-t-2xl p-2 md:p-2 justify-center items-center bg-fbr">
                <a href="#A_Propos">
                <h1 className="text-2xl" >PourQuoi FBR  </h1>
@@ -48,3 +65,5 @@ function Banner() {
 }
 
 export default Banner
+
+ 

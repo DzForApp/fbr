@@ -4,6 +4,7 @@ import Image from "next/image";
  import ServiceItem from "./serviceItem";
 import { ArrowDownIcon, CarFront, FactoryIcon, IceCream2Icon, IndianRupeeIcon, LampDeskIcon, LampFloorIcon, MailCheckIcon, OptionIcon, PenBoxIcon, PlaneIcon, PlaneLandingIcon, ScissorsSquareDashedBottom, TestTube2Icon, TestTubeIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 function Services() {
   const [item, setItem] = useState(0);
@@ -13,6 +14,8 @@ function Services() {
 
  
   const [menu, setMenu] = useState(false);
+  const { scrollXProgress } = useViewportScroll()
+  const scale = useTransform(scrollXProgress, [0, 1], [0.2, 3]);
 
   return (
     <section
@@ -30,15 +33,17 @@ function Services() {
          
 
       </div>
-      <div className=" p-4 flex flex-wrap items-start justify-center text-xs overflow-x-auto w-full md:w-auto h-auto px-4  ">
+      <div className="p-4 flex flex-wrap items-start justify-center text-xs overflow-x-auto w-full md:w-auto h-auto px-4 ">
   
+     
+          <ServiceItem _id={"01"} name={"Inspiration"} icon={LampDeskIcon} desc={["Data center network"]}/>
+        <ServiceItem _id={"02"} name={"Conception"} icon={CarFront} desc={["Data center network"]}/>
+        <ServiceItem _id={"03"} name={"Modélisation"} icon={PenBoxIcon} desc={["Data center network"]}/>
+        <ServiceItem _id={"04"} name={"Prototype"} icon={ScissorsSquareDashedBottom} desc={["Data center network"]}/>
+        <ServiceItem _id={"05"} name={"Tests"} icon={TestTube2Icon} desc={["Data center network"]}/>
+        <ServiceItem _id={"06"} name={"Production"} icon={FactoryIcon} desc={["Data center network"]}/>
 
-        <ServiceItem _id={"01"} name={"Inspiration"} icon={LampDeskIcon} desc={["Data centger network, LAN, Storage"]}/>
-        <ServiceItem _id={"02"} name={"Conception"} icon={CarFront} desc={["Data centger network, LAN, Storage"]}/>
-        <ServiceItem _id={"03"} name={"Modélisation"} icon={PenBoxIcon} desc={["Data centger network, LAN, Storage"]}/>
-        <ServiceItem _id={"04"} name={"Prototype"} icon={ScissorsSquareDashedBottom} desc={["Data centger network, LAN, Storage"]}/>
-        <ServiceItem _id={"05"} name={"Tests"} icon={TestTube2Icon} desc={["Data centger network, LAN, Storage"]}/>
-        <ServiceItem _id={"06"} name={"Production"} icon={FactoryIcon} desc={["Data centger network, LAN, Storage"]}/>
+     
     
          
       </div>

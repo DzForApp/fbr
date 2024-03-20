@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Image from "next/image"
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "../../ui/carousel"
 import { Card, CardContent } from "../../ui/card"
@@ -6,6 +6,7 @@ import Autoplay from "embla-carousel-autoplay"
 import { plugin } from "postcss"
 import { MailIcon } from "lucide-react"
 import { Button } from "../../ui/button"
+import { motion } from "framer-motion"
 
 const images =[
    /* "/images/f1.jpg",
@@ -29,6 +30,7 @@ function Karousel() {
         return `https://via.placeholder.com/${randomImageWidth}x${randomImageHeight}`;
       };
     
+ 
 
   return (
     <div className="relative p-0 w-full h-screen    ">
@@ -44,9 +46,18 @@ function Karousel() {
         {Array.from({ length: 3 }).map((_, index) => (
           <CarouselItem key={index}>
               
-            <div className="p-0 ">
+            <motion.div
+               
+             
+              initial={{opacity: 0, scale:1.52}}
+              whileInView={{opacity: 1}}
+              viewport={{ once: true }}
+              animate={{ scale: 1.0 }}
+              transition={{duration: 1.9, delay: 0.1 , ease: "easeOut"}}
+            className="p-0 ">
               <Card className="w-full h-screen ">
               <CardContent className="absolute flex w-full h-full aspect-square items-start justify-center p-0">
+                
                   <Image
                     src={images[index+1]}
                     alt={`Random Image ${index + 1}`}
@@ -57,7 +68,7 @@ function Karousel() {
                    
                 </CardContent>
               </Card>
-            </div>
+            </motion.div>
           </CarouselItem>
         ))}
           

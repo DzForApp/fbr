@@ -1,5 +1,4 @@
-import Footer from "@/components/Footer/footer";
-import Navbar from "@/components/Header/navbar";
+"use client"
 import About from "@/components/Sections/About/about";
 import Banner from "@/components/Sections/Banner/Banner"; 
 import Contact from "@/components/Sections/Contact/contact";
@@ -8,6 +7,7 @@ import Partners from "@/components/Sections/Partners/Partners";
 import Process from "@/components/Sections/Process/Process";
 import { ProdcutList } from "@/components/Sections/Products/prodcuts-list";
 import Testimonials from "@/components/Sections/Testimonials/Testimonials";
+import { motion } from "framer-motion";
  
 export default function Home() {
   return (
@@ -22,12 +22,22 @@ export default function Home() {
        <div className=" ">
        
         </div> 
-        <About />
-        <Services />
-        <Process />
-        <Testimonials />
-       
-        <Contact />
+          <motion.div
+            className="card-container"
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+          >
+            
+            <About />
+            <Services />
+            <Process />
+            <Testimonials />
+          
+            <Contact />
+
+          </motion.div>
+     
       
          
         </div>
