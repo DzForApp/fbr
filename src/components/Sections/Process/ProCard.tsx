@@ -25,7 +25,7 @@ function ProCard({_id, name, icon:Icon, desc,className, Yinit,Yanimate , childre
     initial={{opacity: 0}}
     whileInView={{opacity: 1}}
     viewport={{ once: true }}
-     transition={{duration: 0.6, delay: (_id * 0.3) , ease: "easeOut"}}
+     transition={{duration: 0.7, delay: (_id * 0.4) , ease: "easeOut"}}
  
 
     className={`${className} hover:scale-90 md:ease-in-out duration-700 hover:shadow-lg  text-incomBg flex flex-grow-1 

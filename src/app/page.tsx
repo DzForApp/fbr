@@ -18,7 +18,7 @@ export default function Home() {
          
           
        </div>
-       <div className="   flex flex-col md:flex-col   w-full md:mt-500 ">
+       <div className="   flex flex-col md:flex-col   w-full md:mt-400 ">
        <div className=" ">
        
         </div> 

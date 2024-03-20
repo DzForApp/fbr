@@ -1,16 +1,13 @@
 import React, { useEffect, useRef } from "react" 
 
 import Image from "next/image"
-import { ArrowDownIcon, Scale, X } from "lucide-react"
+import { ArrowDownIcon } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import {  motion} from "framer-motion"
  
  
 function About() {
-   
-  
  
-
   return (
     <section id="A_Propos" className=" relative py-12    md:mt-4  font-sans text-black  w-full h-screen   scroll-my-16 items-start md:items-center ">
        <div className="relative w-full   text-center  md:w-full h-auto space-y-8  md:space-y-4">
@@ -44,13 +41,11 @@ function About() {
            
               >
                       <motion.div 
-                  
-                          initial={{opacity: 0, scale:1}}
+                          initial={{opacity: 0}}
                           whileInView={{opacity: 1}}
                           viewport={{ once: true }}
                           animate={{ x: -10, scale: 0.9 }}
-                          
-                          transition={{duration: 1.9, delay: 0.1 , ease: "easeOut"}}
+                           transition={{duration: 1.9, delay: 0.1 , ease: "easeOut"}}
                            exit={{ x: 0 , scale: 1}}
                           
                                     

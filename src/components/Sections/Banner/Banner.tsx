@@ -23,8 +23,8 @@ function Banner() {
           </div>
 
  
-          <motion.div  className="p-0 w-full "
-          initial={{opacity: 0}}
+          <motion.div  className="p-0 w-full  flex items-center justify-center "
+          initial={{opacity: 0, x:0}}
           whileInView={{opacity: 1}}
           viewport={{ once: true }}
           animate={{scale: 0.9 }}
@@ -33,7 +33,7 @@ function Banner() {
            >
               <div  
                   
-                className="   relative flex  space-y-16  w-full h-screen text-center md:w-1/2 flex-col text-shadow-xl  items-center justify-center md:space-y-4 lg:text-center text-fbr ">
+                className="   relative flex space-y-16 w-full h-screen text-center md:w-1/2 flex-col text-shadow-xl  items-center justify-center md:space-y-4 lg:text-center text-fbr ">
                   <h1 className="hover:scale-125  transition duration-500 cursor-pointer w-full text-5xl    uppercase md:text-7xl font-bold">
                       Frères Bouali <br/> Radiateurs
                   </h1>
@@ -42,8 +42,8 @@ function Banner() {
                   </p>
                   <a href="/products">
                   <div className="flex space-x-3">
-                      <Button className="bannerButton bg-fbr h-16 text-xl hover:bg-white text-black ">
-                      <CarIcon className="h-8 w-8 text-black text-2xl md:w-7 md:h-7" /> Découvrir Nos Produits
+                      <Button className="bannerButton bg-fbr h-12 text-lg hover:bg-white text-black ">
+                       Découvrir Nos Produits
                       </Button>
                   
                   </div>

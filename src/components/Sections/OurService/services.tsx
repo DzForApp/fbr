@@ -36,12 +36,12 @@ function Services() {
       <div className="p-4 flex flex-wrap items-start justify-center text-xs overflow-x-auto w-full md:w-auto h-auto px-4 ">
   
      
-          <ServiceItem _id={"01"} name={"Inspiration"} icon={LampDeskIcon} desc={["Data center network"]}/>
-        <ServiceItem _id={"02"} name={"Conception"} icon={CarFront} desc={["Data center network"]}/>
-        <ServiceItem _id={"03"} name={"Modélisation"} icon={PenBoxIcon} desc={["Data center network"]}/>
-        <ServiceItem _id={"04"} name={"Prototype"} icon={ScissorsSquareDashedBottom} desc={["Data center network"]}/>
-        <ServiceItem _id={"05"} name={"Tests"} icon={TestTube2Icon} desc={["Data center network"]}/>
-        <ServiceItem _id={"06"} name={"Production"} icon={FactoryIcon} desc={["Data center network"]}/>
+          <ServiceItem _id={1} name={"Inspiration"} icon={LampDeskIcon} desc={["Data center network"]}/>
+        <ServiceItem _id={2} name={"Conception"} icon={CarFront} desc={["Data center network"]}/>
+        <ServiceItem _id={3} name={"Modélisation"} icon={PenBoxIcon} desc={["Data center network"]}/>
+        <ServiceItem _id={4} name={"Prototype"} icon={ScissorsSquareDashedBottom} desc={["Data center network"]}/>
+        <ServiceItem _id={5} name={"Tests"} icon={TestTube2Icon} desc={["Data center network"]}/>
+        <ServiceItem _id={6} name={"Production"} icon={FactoryIcon} desc={["Data center network"]}/>
 
      
     
