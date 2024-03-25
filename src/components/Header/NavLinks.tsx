@@ -67,6 +67,7 @@ export default function NavLinks({className}:NavLinksProps) {
         <ul className={`${className}`}>
           {navItems.map((item, i) => (
             <LinkItem 
+              key={i}
               className={`link ${pathname === "/" ? "active" : ""} flex `}
               href={item.link} 
               label={item.label} 
