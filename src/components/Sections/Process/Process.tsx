@@ -19,10 +19,12 @@ function Process() {
         </div>
       
         
-        <div className="relative w-full md:full md:px-24  md:h-[70vh] md:mx-8   p-8 md:space-x-16 items-center justify-center flex flex-col md:flex-row">
-            <ProCard _id={1} Yinit={-700} Yanimate={10} name={"Plannification"} icon={HeadphonesIcon} desc={["In this this fase we try to know more about your busniess by asking the right questions "]}/>
-            <ProCard _id={2} Yinit={-900} Yanimate={0} name={"Conception"} icon={RadiationIcon} desc={["In this this fase we try to know more about your busniess by asking the right questions  "]}/>
-            <ProCard _id={3} Yinit={-700} Yanimate={0} name={"Production"} icon={ShipWheel} desc={["In this this fase we try to know more about your busniess by asking the right questions "]}/>
+        <div className="relative w-full md:full md:px-24  md:h-[70vh]   
+        
+        p-8 md:space-x-12   items-center justify-center flex flex-col md:flex-row">
+            <ProCard _id={1}  name={"Plannification"} icon={HeadphonesIcon} desc={["In this this fase we try to know more about your busniess by asking the right questions "]}/>
+            <ProCard _id={2}   name={"Conception"} icon={RadiationIcon} desc={["In this this fase we try to know more about your busniess by asking the right questions  "]}/>
+            <ProCard _id={3}   name={"Production"} icon={ShipWheel} desc={["In this this fase we try to know more about your busniess by asking the right questions "]}/>
 
         </div>
       
