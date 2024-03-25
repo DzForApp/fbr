@@ -7,20 +7,11 @@ import { Button } from "@/components/ui/button";
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 
 function Services() {
-  const [item, setItem] = useState(0);
-
-  const [SelectedItemIndex, setSelectedItemIndex] = useState(0);
-  const [offset, setCarouselOffsetStyle] = useState(0);
-
  
-  const [menu, setMenu] = useState(false);
-  const { scrollXProgress } = useViewportScroll()
-  const scale = useTransform(scrollXProgress, [0, 1], [0.2, 3]);
-
   return (
     <section
       id="Services"
-      className="relative  flex md:flex-col  md:space-y-2 h-auto md:h-screen items-center  scroll-mt-16 flex-col    "
+      className="relative  flex md:flex-col  md:space-y-2 h-auto md:h-screen   items-center  scroll-mt-16 flex-col    "
     >
     
       <div className=" flex flex-col w-full py-2 items-center justify-center text-3xl md:text-4xl font-medium text-slate-800   ">

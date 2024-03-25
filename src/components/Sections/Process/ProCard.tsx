@@ -1,9 +1,9 @@
 import { Button } from '@/components/ui/button'
 import { Card } from '@/components/ui/card'
-import { AnimatePresence, easeIn, easeInOut, motion, useTransform, useViewportScroll } from 'framer-motion'
+import { AnimatePresence, easeIn, easeInOut, motion, useScroll, useTransform, useViewportScroll } from 'framer-motion'
 import { LucideIcon, Scale } from 'lucide-react'
 import Image from 'next/image'
-import React, { ReactNode } from 'react'
+import React, { ReactNode, useRef } from 'react'
 
 type ProCardProps = {
     _id:number, 
@@ -16,18 +16,24 @@ type ProCardProps = {
     Yanimate: number,
 }
 function ProCard({_id, name, icon:Icon, desc,className, Yinit,Yanimate , children}:  ProCardProps) {
- 
+  const ref = useRef<HTMLElement>(null)
+  const {scrollYProgress} = useScroll({
+    target: ref,
+    offset: ["0 1", "0.33 1"],
+  })
   
   return (
-
-  <AnimatePresence>
-    <motion.div 
-    initial={{opacity: 0}}
-    whileInView={{opacity: 1}}
-    viewport={{ once: true }}
-     transition={{duration: 0.7, delay: (_id * 0.4) , ease: "easeOut"}}
  
-
+    <motion.section
+        ref ={ref}
+        style={{
+          scale:scrollYProgress,
+          opacity:scrollYProgress,
+        }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}   
+        transition={{duration: 0.6, delay: (0.2) , ease: "easeOut"}}
     className={`${className} hover:scale-90 md:ease-in-out duration-700 hover:shadow-lg  text-incomBg flex flex-grow-1 
     basis-full md:basis-1/2   flex-col m-2 p-6 space-y-8 justify-between md:space-y-8 w-full h-full items-center  bg-white shadow-xl rounded-2xl mx-2  `}
   >
@@ -42,8 +48,7 @@ function ProCard({_id, name, icon:Icon, desc,className, Yinit,Yanimate , childre
 
 
       <p className="text-gray flex-grow text-xl text-center">{desc}</p>
-  </motion.div> 
-  </AnimatePresence>
+  </motion.section>  
   )
 }
 
