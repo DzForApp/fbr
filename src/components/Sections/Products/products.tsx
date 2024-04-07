@@ -33,7 +33,7 @@ function ProdSection({ data }: ProdSectionProps) {
    console.log(filteredProducts)
   return (
     <section id="Produits" className= " relative  ">
-      <div className=" flex flex-col  md:mt-0 md:flex-col list-none  space-y-4  font-sans text-black  w-full h-screen   scroll-my-24 py-16 items-center">
+      <div className=" flex flex-col  md:mt-0 md:flex-col list-none min-h-screen space-y-4  font-sans text-black  w-full h-auto   scroll-my-24 items-center">
       <div className="text-black text-4xl md:mt-4 font-semibold font-sans ">Nos Produits</div> 
       <div className="flex space-x-4 ">
         {filters.map((category, idx) => (
@@ -54,8 +54,8 @@ function ProdSection({ data }: ProdSectionProps) {
           </Button>
         ))}
       </div>
-      <span>____________________________________</span>
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-4  md:flex-wrap">
+      {/* <span>____________________________________</span> */}
+      <div className="relative grid grid-cols-2 gap-4 md:grid-cols-4    md:flex-wrap">
         {filteredProducts.map((product, key) => (
           <li key={key}   >
             <Product _id={product._id} name={product.name} ImageUrl={product.imageUrl} category={product.category} />
