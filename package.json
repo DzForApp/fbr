@@ -28,6 +28,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.50.1",
+    "react-use-measure": "^2.1.1",
     "sanity": "^3.36.4",
     "styled-components": "^6.1.8",
     "tailwind-merge": "^2.2.1",
