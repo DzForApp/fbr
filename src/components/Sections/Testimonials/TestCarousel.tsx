@@ -14,28 +14,28 @@ const images =[
     "/images/backgrounds/f9.jpg",
 ]
 const TestItemData = [ {
-  name:"Ahmed",
+  name:"Rachid Ziani - RMC",
   imageUrl :"/images/backgrounds/f4.jpg",
   rate:5,
-  comment:"no comment"
+  comment:"Depuis l'utilisation des radiateurs FBR, les problèmes de surchauffe ont disparu. Service après-vente exceptionnel.t"
 },
 {
-  name:"SONACOM",
+  name:"Sofiane Belkacem, T.T.A",
   imageUrl :"/images/backgrounds/f6.jpg",
   rate:5,
-  comment:"no comment- text to display 01"
+  comment:"Les radiateurs FBR ont transformé notre flotte. Performants et fiables, nous les recommandons vivement"
 },
 {
-  name:"ALG-AUTO",
+  name:"Khadidja Hamidi, AAS",
   imageUrl :"/images/backgrounds/f8.jpg",
   rate:4,
-  comment:"no comment text to display 02"
+  comment:"FBR offre des radiateurs durables et efficaces. Nos clients sont très satisfaits."
 },
 {
   name:"CEFAO",
   imageUrl :"/images/backgrounds/f9.jpg",
   rate:3,
-  comment:"no comment text to display  03"
+  comment:"FBR offre des radiateurs durables et efficaces"
 },
 
 ]

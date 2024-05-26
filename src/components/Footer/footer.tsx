@@ -34,7 +34,7 @@ function Footer() {
           <div className="flex justify-start space-x-4">
             
             <div className="flex flex-col w-full space-4 space-y-4">
-              <FootItem icon={LocateIcon} label={"Bordj El Kiffan , Algiers, Algeria"} />
+              <FootItem icon={LocateIcon} label={"Ain M'lila , Oum El Bouaghi, Algeria"} />
               <FootItem icon={PhoneCallIcon} label={"+213 661 61 20 50"} />
               <FootItem icon={MailCheckIcon} label={"contact@fbr-dz.com"} />
             </div>

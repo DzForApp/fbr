@@ -57,7 +57,7 @@
     
   }
   html {
-    scroll-behavior: smooth;
+    scroll-behavior:  smooth;
   }
   body {
     @apply bg-background text-foreground;

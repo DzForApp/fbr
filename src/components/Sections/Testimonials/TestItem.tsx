@@ -10,28 +10,36 @@ type TestItemProps = {
 }
 function TestItem({name, imageUrl, rate, comment}:TestItemProps) { 
   return (
-    <div className='w-full items-center justify-center flex flex-col '>
-            <div className='w-full   text-xl'>
-             {name}
-            </div>
-            <div className='w-full   flex flex-row justify-center items-center py-1 '>
-                <Image 
+    <div className='w-full items-center justify-center flex flex-row  h-full  '>
+          <div className='  flex flex-row justify-center items-center py-2 '>
+             <div className=' w-1/3 h-24 items-center justify-center flex'>
+             <Image 
                     src={imageUrl}
-                    width={50}
-                    height={50}
-                    className='w-8 h-8 rounded-full'
+                    width={120}
+                    height={120}
+                    className='w-16 h-16 rounded-full'
                     alt={'no avatar'}
                     priority={true}
                 />
+              </div>   
+
+              <div className='  w-2/3'>
+                <div className='w-full   text-xl'>
+                {name}
+                </div>
+              
+              
+              {/* <div>Rate:{rate}/5</div> */}
+              
+                <div className='w-full '>
+                    <p>
+                    {comment}
+                    </p>
+                </div>
+              </div>
             </div>
+           
             
-            {/* <div>Rate:{rate}/5</div> */}
-            
-            <div className='w-full '>
-                <p>
-                {comment}
-                </p>
-            </div>
     </div>
   )
 }

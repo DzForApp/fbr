@@ -15,7 +15,7 @@ function About() {
   })
 
   return (
-    <section  id="A_Propos" className=" relative py-12    md:mt-4  font-sans text-black  w-full h-screen  md:h-screen  scroll-my-40 items-start md:items-center ">
+    <section  id="A_Propos" className=" relative py-12    md:mt-2  font-sans text-black  w-full h-screen  md:h-screen  scroll-my-24 items-start md:items-center ">
        <div className="relative w-full   text-center  md:w-full h-auto space-y-8  md:space-y-4">
         <AnimatePresence>
           <motion.section
@@ -27,12 +27,12 @@ function About() {
            initial="hidden"
            whileInView="visible"
            viewport={{ once: true }}   
-           transition={{duration: 0.9, delay: (0.1) , ease: "easeInOut"}}
+           //transition={{duration: 1.9, delay: (0.1) , ease: "easeInOut"}}
            exit="hidden"
-            className="flex flex-col  space-y-4 md:flex-row w-full h-auto md:h-full justify-center items-center" >
+            className="flex flex-col   container space-y-4 md:flex-row w-full h-auto md:h-full justify-center items-center" >
               
               {/* First slogan About Div */}
-                  <div   className="relative md:w-1/2 space-y-8 md:py-4 items-center" >
+                  <div   className="relative md:w-1/2 space-y-8   md:py-4 items-center" >
                     <h1 className="relative md:mb-4 uppercase font-semibold text-2xl text-fbr">à Propos FBR</h1>
                     <p className="w-full text-3xl px-4  md:text-5xl font-semibold">  Construits pour l&apos;endurance,<br/> refroidis pour l&apos;efficacité</p>
                     <p className=" md:flex text-lg md:w-full  px-6 py-6  lg:text-2xl md:text-gray-700   md:px-24">
@@ -48,7 +48,7 @@ function About() {
                     </a>
                   </div>
                   {/* Image About Div */}
-                  <div className="container relative md:w-1/2 space-y-8 md:py-2 items-center" >
+                  <div className="container relative md:w-1/2 mx-8 h-full space-y-8   justify-center flex items-center" >
                           <Image  src="/images/backgrounds/r6-3d.png" width={550} height={550} priority alt="About Image"/>
                   </div>
        

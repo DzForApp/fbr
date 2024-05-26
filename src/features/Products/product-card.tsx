@@ -1,15 +1,13 @@
 import React from "react"
-import { Card } from "../../ui/card"
+import { Card } from "../../components/ui/card"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { SimplifiedProduct } from "@/app/interface"
 
 type ProductProps = {
-    _id:string,
-    name:string,
-    category: string,
-    ImageUrl:string[]
+    product: SimplifiedProduct
 }
-function Product({_id, name, category, ImageUrl }:  ProductProps) {
+function ProductCard({product }:  ProductProps) {
   return (
     <div className="transition hover:scale-125  duration-1000" >
         <Card className="flex flex-col  m-2 md:m-4 justify-normal items-center  rounded-sm  border-none md:border-spacing-1   w-[18vh] md:w-[35vh] h-[20vh] md:h-[35vh]  ">
@@ -18,7 +16,7 @@ function Product({_id, name, category, ImageUrl }:  ProductProps) {
              
               <Image 
                   src={
-                      ImageUrl && ImageUrl.length > 0 ? ImageUrl[0] : ""
+                    product.imageUrl && product.imageUrl.length > 0 ? product.imageUrl[0] : ""
                   } 
                   fill
                   alt={"noImg"} 
@@ -26,7 +24,7 @@ function Product({_id, name, category, ImageUrl }:  ProductProps) {
               
             </div>
             <div className="flex flex-col w-full h-1/3 md:px-4  py-2 text-center space-y-2 md:space-y-4">
-              <span>{name}</span>
+              <span>{product.name}</span>
               <Button className="w-full bg-fbr hover:bg-incomBg   ">Découvrir</Button>
             </div>
              
@@ -38,4 +36,4 @@ function Product({_id, name, category, ImageUrl }:  ProductProps) {
   )
 }
 
-export default Product
+export default ProductCard

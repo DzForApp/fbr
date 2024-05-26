@@ -4,8 +4,7 @@ import Banner from "@/components/Sections/Banner/Banner";
 import Contact from "@/components/Sections/Contact/contact";
 import Services from "@/components/Sections/OurService/services";
 import Partners from "@/components/Sections/Partners/Partners";
-import Process from "@/components/Sections/Process/Process";
-import { ProdcutList } from "@/components/Sections/Products/prodcuts-list";
+import Process from "@/components/Sections/Process/Process"; 
 import Testimonials from "@/components/Sections/Testimonials/Testimonials";
 import { motion } from "framer-motion";
  

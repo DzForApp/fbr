@@ -1,5 +1,5 @@
 "use client"
-import { BellIcon, Blinds, HomeIcon, LogInIcon, Menu, PanelTopCloseIcon, SearchCheckIcon, SearchIcon, ShieldCloseIcon, SidebarCloseIcon, SidebarIcon, ToggleRightIcon, UserPlusIcon, X } from "lucide-react";
+import { ArrowUp, BellIcon, Blinds, HomeIcon, LogInIcon, Menu, PanelTopCloseIcon, SearchCheckIcon, SearchIcon, ShieldCloseIcon, SidebarCloseIcon, SidebarIcon, ToggleRightIcon, UserPlusIcon, X } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react"; 
 import { Button } from "../ui/button";
@@ -35,7 +35,8 @@ function NavSecond({ }) {
   }, []);
 
   return (
-    <header className={`${isScrolled && " bg-white   transition-all ease-in-out shadow-md text-fbr"}`}>
+    <div>
+        <header className={`${isScrolled && " bg-white   transition-all ease-in-out shadow-md text-fbr"}`}>
       <div className=" relative w-full top-0 md:h-[2vh] flex  text-fbr justify-between items-center ">
         
             <div className="flex w-1/6 items-center  text-6xl  font-bold ">
@@ -57,15 +58,26 @@ function NavSecond({ }) {
               <LinkItem className={`link ${pathname === "/register" ? "active" : ""}`} href={"/register"} label={""} icon={UserPlusIcon} />
               */}
             </div>
-            <div>
+            {/* this is the mobile sidebare menu */}
+            <div className="hidden">
                
               <Menu className=" w-16 h-16 md:hidden"/>
               <MobilNav  />
             </div>
         
       </div>
-      
+     
     </header>
+          <div className="  w-16   h-screen  transition-all ease-in-out fixed flex items-end flex-row z-10 ">
+              <span className={`${isScrolled && "bg-fbr  w-12  h-12 rounded-xl text-incomBg m-8 text-center justify-center transition-all ease-in-out fixed flex items-center text-xl "}`}>
+                <Link href={"#/"}>
+                <ArrowUp/>
+                </Link>
+                
+              </span>
+            </div>
+    </div>
+    
   );
 }
 

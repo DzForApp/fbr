@@ -1,17 +1,3 @@
-export interface SimplifiedProduct{
-
-    _id: string;
-    imageUrl: string[];
-    name: string;
-    category: string;
-}
-
-export interface Category{
-    _id: string,
-    name: string
-}
-
-
 
 
 export interface IRating {

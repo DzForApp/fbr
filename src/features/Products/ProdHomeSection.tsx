@@ -1,22 +1,22 @@
 "use client"
-import React, { useState } from "react"
+import React, { ReactElement, useState } from "react"
 import { Button } from "@/components/ui/button" 
 import Product from "./product-card"
-import { SimplifiedProduct } from "@/app/interface" 
+import { SimplifiedProduct, Category } from "@/app/interface" 
 
-const filters = ["car", "trucks", "engins"]
+//const filters = ["car", "trucks", "engins"]
 
 
 
 interface ProdSectionProps {
   data: SimplifiedProduct[]
+  categoryList: Category[]
 }
-
-
-function ProdSection({ data }: ProdSectionProps) {
+  
+function ProductsHomeSection({ data, categoryList}: ProdSectionProps) {
  //category list management 
   const [selectedCategories, setSelectedCategories] = useState<string[]>([])
-
+  //console.log(category)
   const addCategory = (category:string) => {
     if(!selectedCategories.includes(category)){
         setSelectedCategories(prev => ([...prev, category]))
@@ -28,29 +28,30 @@ function ProdSection({ data }: ProdSectionProps) {
     }
   }
 //Filter Products Management
-
+  
   const filteredProducts = selectedCategories.length === 0 ? data : data.filter((product) =>selectedCategories.includes( product.category))
-   console.log(filteredProducts)
+   //console.log(filteredProducts)
   return (
     <section id="Produits" className= " relative  ">
       <div className=" flex flex-col  md:mt-0 md:flex-col list-none min-h-screen space-y-4  font-sans text-black  w-full h-auto   scroll-my-24 items-center">
       <div className="text-black text-4xl md:mt-4 font-semibold font-sans ">Nos Produits</div> 
       <div className="flex space-x-4 ">
-        {filters.map((category, idx) => (
-          <Button key={idx} variant={selectedCategories.includes(category)? "selected": "ghost"}
+        {categoryList.map((category) => (
+          
+          <Button key={category._id} variant={selectedCategories.includes(category.name)? "selected": "ghost"}
            className="text-black text-xl font-thin  "
            onClick={() => {
-            if(selectedCategories.includes(category)){
-                  removeCategory(category) 
+            if(selectedCategories.includes(category.name)){
+                  removeCategory(category.name) 
                }
             else
-                addCategory(category)
+                addCategory(category.name)
                // removeCategory("Tout")
-          
+           
             }
             
             }>
-            {category}
+            {category.name}
           </Button>
         ))}
       </div>
@@ -58,7 +59,7 @@ function ProdSection({ data }: ProdSectionProps) {
       <div className="relative grid grid-cols-2 gap-4 md:grid-cols-4    md:flex-wrap">
         {filteredProducts.map((product, key) => (
           <li key={key}   >
-            <Product _id={product._id} name={product.name} ImageUrl={product.imageUrl} category={product.category} />
+            <Product product={product} />
           </li>
         ))}
       </div>
@@ -68,4 +69,4 @@ function ProdSection({ data }: ProdSectionProps) {
   )
 }
 
-export {ProdSection}
+//export {Products}

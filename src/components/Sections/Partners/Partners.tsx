@@ -1,8 +1,7 @@
 import { Carousel } from "@/components/ui/carousel"
 import Image from "next/image"
-import React from "react" 
-import TestKarousel from "./PartnerCarousel"
-import PartnerCarousel from "./PartnerCarousel"
+import React from "react"  
+import BrandCarousel from "./BrandCarousel"
 
 
 const images =[
@@ -23,7 +22,8 @@ function Partners() {
                             <h1 className="relative w-full h-auto text-center p-2 text-fbr font-semibold uppercase">Nos Partenaires</h1>
                             <h1 className="relative w-full h-auto text-6xl  font-sans text-center"></h1>
                             <div className="relative flex flex-row justify-center opacity-90   w-full h-full mt-8  rounded-lg ">
-                              <PartnerCarousel/>   
+                              {/* <PartnerCarousel/>   */}
+                              <BrandCarousel /> 
                             </div>
                             
                         </div>
